@@ -1,63 +1,68 @@
-INS - Cryptography Ciphers in C++ and Python
-=============================================
+# INS - Cryptography Ciphers in C++ and Python
 
-This repository contains implementations of various classical cryptographic ciphers using C++ and Python. These ciphers help illustrate how encryption techniques have evolved over time.
+This repository contains implementations of various classical cryptographic ciphers in C++ and Python. These ciphers demonstrate how encryption techniques have evolved and help understand the fundamentals of secure communication.
 
-Implemented Ciphers:
---------------------
-- Caesar Cipher: Shifts characters by a fixed number of positions.
-- Monoalphabetic Cipher: Replaces each plaintext letter with a corresponding letter from a fixed shuffled alphabet.
-- Playfair Cipher: Encrypts pairs of letters using a 5x5 matrix.
-- Hill Cipher: Uses matrix multiplication for polygraphic substitution.
-- Vigenère Cipher: Encrypts text using a repeating keyword-based shifting technique.
-- Feistel Cipher: Splits plaintext into two halves and processes them through multiple rounds using a round function, key, and XOR operations (forming the basis for modern block ciphers like DES).
+## 📌 Overview
+Cryptography is the backbone of secure data transmission. This repository includes implementations of classical encryption techniques that have shaped modern cryptographic methods. The ciphers are implemented in C++ and Python to provide hands-on experience with encryption and decryption processes.
 
-Prerequisites:
---------------
-- C++ Compiler (e.g., g++). Verify with:
-    g++ --version
-- Python Interpreter. Verify with:
-    python --version
-    (or python3 --version)
+## 🔐 Implemented Ciphers
 
-Running the Programs:
----------------------
-1. Clone the repository:
-    git clone https://github.com/luqman7f/INS.git
-    cd INS
+### 🔄 Substitution Ciphers:
+- **Caesar Cipher** 🏛️: Shifts characters by a fixed number of positions in the alphabet.
+- **Monoalphabetic Cipher** 🔠: Each plaintext letter is replaced with a corresponding letter from a shuffled alphabet.
+- **Playfair Cipher** 🔢: Encrypts letter pairs using a 5x5 matrix.
+- **Vigenère Cipher** 🔑: Uses a repeating keyword to shift text characters, making it stronger than simple substitution.
 
-2. Compile and run the C++ programs:
+### 🏗️ Polyalphabetic & Block Ciphers:
+- **Hill Cipher** 📊: Employs matrix multiplication for polygraphic substitution.
+- **Feistel Cipher** 🔄: Splits plaintext into two halves and processes them through multiple rounds using a round function, key, and XOR operations, forming the basis of modern block ciphers like DES.
+- **DES (Data Encryption Standard)** 🔏: Implements the widely used block cipher encryption algorithm that enhances security through multiple rounds of permutation and substitution.
+- **RSA (Rivest-Shamir-Adleman)** 🔐: A public-key encryption algorithm that uses modular arithmetic for secure key exchange and message encryption.
 
-    - Caesar Cipher:
-          g++ CaesarCipher.cpp -o CaesarCipher
-          ./CaesarCipher
+## ⚙️ Prerequisites
 
-    - Monoalphabetic Cipher:
-          g++ MonoalphabeticCipher.cpp -o MonoalphabeticCipher
-          ./MonoalphabeticCipher
+Before running the programs, ensure you have the following installed:
+- **C++ Compiler** (e.g., g++). Verify with:
+  ```sh
+  g++ --version
+  ```
+- **Python Interpreter**. Verify with:
+  ```sh
+  python --version  # or: python3 --version
+  ```
 
-    - Hill Cipher:
-          g++ HillCipher.cpp -o HillCipher
-          ./HillCipher
+## 🚀 Running the Programs
 
-    - Vigenère Cipher:
-          g++ VigenereCipher.cpp -o VigenereCipher
-          ./VigenereCipher
+### 🔻 Clone the Repository
+```sh
+git clone https://github.com/luqman7f/INS.git
+cd INS
+```
 
-3. Run the Python programs:
+### 💻 Compile and Run C++ Programs:
+```sh
+g++ caesar.cpp -o caesar && ./caesar
+g++ monoalphabetic.cpp -o monoalphabetic && ./monoalphabetic
+g++ hill_cipher.cpp -o hill_cipher && ./hill_cipher
+g++ vigenere.cpp -o vigenere && ./vigenere
+g++ feistal.cpp -o feistal && ./feistal
+```
 
-    - Playfair Cipher:
-          python playfair_cipher.py
-          (or: python3 playfair_cipher.py)
+### 🐍 Run Python Programs:
+```sh
+python playfair.py   # or: python3 playfair.py
+python DES.py        # or: python3 DES.py
+python rsa.py        # or: python3 rsa.py
+```
 
-    - Feistel Cipher:
-          python feistel.py
-          (or: python3 feistel.py)
+## 📖 Usage
+Each program provides on-screen instructions for encrypting or decrypting messages. Users can input plaintext, apply encryption, and retrieve the corresponding ciphertext. Similarly, decryption restores the original message from ciphertext.
 
-Usage:
-------
-Each program provides on-screen instructions to help you encrypt or decrypt messages.
+## 🤝 Contributing
+We welcome contributions! Feel free to fork this repository, add improvements, and submit pull requests. Enhancements can include:
+- Optimizing algorithms for better efficiency.
+- Adding graphical or web-based implementations.
+- Improving documentation with real-world cryptographic applications.
 
-Contributing:
--------------
-Contributions are welcome! Feel free to fork the repository, make improvements, and submit pull requests.
+---
+
