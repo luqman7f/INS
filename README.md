@@ -18,6 +18,8 @@ Cryptography is the backbone of secure data transmission. This repository includ
 - **Feistel Cipher** 🔄: Splits plaintext into two halves and processes them through multiple rounds using a round function, key, and XOR operations, forming the basis of modern block ciphers like DES.
 - **DES (Data Encryption Standard)** 🔏: Implements the widely used block cipher encryption algorithm that enhances security through multiple rounds of permutation and substitution.
 - **RSA (Rivest-Shamir-Adleman)** 🔐: A public-key encryption algorithm that uses modular arithmetic for secure key exchange and message encryption.
+- **ECC (Elliptic Curve Cryptography)** 📈: A modern cryptographic algorithm that provides strong security with smaller key sizes, making it efficient for encryption and key exchange.
+- **Diffie-Hellman Key Exchange** 🔄: A secure method for exchanging cryptographic keys over an insecure channel without prior key sharing.
 
 ## ⚙️ Prerequisites
 
@@ -53,6 +55,8 @@ g++ feistal.cpp -o feistal && ./feistal
 python playfair.py   # or: python3 playfair.py
 python DES.py        # or: python3 DES.py
 python rsa.py        # or: python3 rsa.py
+python ecc.py        # or: python3 ecc.py
+python diffie_hellman.py # or: python3 diffie_hellman.py
 ```
 
 ## 📖 Usage
@@ -63,6 +67,4 @@ We welcome contributions! Feel free to fork this repository, add improvements, a
 - Optimizing algorithms for better efficiency.
 - Adding graphical or web-based implementations.
 - Improving documentation with real-world cryptographic applications.
-
----
 
